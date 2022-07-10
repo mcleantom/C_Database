@@ -239,10 +239,10 @@ int main() {
 
         switch (execute_statement(&statement, table)) {
             case EXECUTE_SUCCESS:
-                printf("Success.\n");
+                printf("Executed.\n");
                 break;
             case EXECUTE_TABLE_FULL:
-                printf("Table full.\n");
+                printf("Error: Table full.\n");
                 break;
         }
     }
