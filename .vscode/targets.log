@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jul 10 18:08:07 2022
+# Make data base, printed on Mon Jul 11 20:49:45 2022
 
 # Variables
 
@@ -55,7 +55,7 @@ CONDA_PREFIX = /home/mclea/anaconda3
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-662f75e3-79e7-42b6-b90b-75e0d3b219ee.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-3c0f2c26-7314-4628-84a5-d470e3a074d0.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -87,7 +87,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 LOGNAME = mclea
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 CONDA_PROMPT_MODIFIER = (base) 
 # environment
@@ -187,6 +187,13 @@ _CE_CONDA =
 
 # Files
 
+clear: db
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 8):
+		rm mydb.db
+
 # Not a target:
 all:
 #  Command line target.
@@ -197,7 +204,7 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-10 18:07:23.592677
+#  Last modified 2022-07-11 20:48:28.9208252
 #  File has been updated.
 #  Successfully updated.
 
@@ -205,7 +212,7 @@ test: db
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 8):
+#  recipe to execute (from 'Makefile', line 11):
 		make
 		bundle exec rspec
 
@@ -236,19 +243,19 @@ src/db.c:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=8/1024=1%, Rehash=0, Collisions=0/21=0%
+# Load=9/1024=1%, Rehash=0, Collisions=0/23=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 22 / storage = 166 B / avg = 7 B
-# current buf: size = 8162 B / used = 166 B / count = 22 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 23 / storage = 172 B / avg = 7 B
+# current buf: size = 8162 B / used = 172 B / count = 23 / avg = 7 B
 
-# strcache performance: lookups = 32 / hit rate = 31%
+# strcache performance: lookups = 35 / hit rate = 34%
 # hash-table stats:
-# Load=22/8192=0%, Rehash=0, Collisions=1/32=3%
-# Finished Make data base on Sun Jul 10 18:08:07 2022
+# Load=23/8192=0%, Rehash=0, Collisions=1/35=3%
+# Finished Make data base on Mon Jul 11 20:49:45 2022
 
  

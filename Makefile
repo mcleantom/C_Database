@@ -4,6 +4,9 @@ db: ./src/db.c
 run: db
 		./src/db mydb.db
 
+clear: db
+		rm mydb.db
+
 test: db
 		make
 		bundle exec rspec
