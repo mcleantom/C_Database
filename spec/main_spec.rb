@@ -174,7 +174,7 @@ describe 'database' do
       result = run_script(script)
 
       expect(result[14..(result.length)]).to match_array([
-        "db > Tree:",
+        "db > B-Tree:",
         "- internal (size 1)",
         "  - leaf (size 7)",
         "    - 1",
@@ -193,7 +193,7 @@ describe 'database' do
         "    - 12",
         "    - 13",
         "    - 14",
-        "db > Need to implement searching an internal node",
+        "db > Need to implement searching internal nodes.",
       ])
     
     end 
