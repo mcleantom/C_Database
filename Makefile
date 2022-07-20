@@ -1,12 +1,12 @@
-db: ./src/db.c
-		gcc ./src/db.c -o db
+/src/db: ./src/db.c
+		gcc ./src/db.c -o ./src/db
 
-run: db
+run: /src/db
 		./src/db mydb.db
 
-clear: db
+clear: /src/db
 		rm mydb.db
 
-test: db
+test: /src/db
 		make
 		bundle exec rspec
